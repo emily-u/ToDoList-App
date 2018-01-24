@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A14D1858201811860025B84E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14D1857201811860025B84E /* AppDelegate.swift */; };
-		A14D185A201811860025B84E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14D1859201811860025B84E /* ViewController.swift */; };
 		A14D185D201811860025B84E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14D185B201811860025B84E /* Main.storyboard */; };
 		A14D185F201811860025B84E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14D185E201811860025B84E /* Assets.xcassets */; };
 		A14D1862201811860025B84E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14D1860201811860025B84E /* LaunchScreen.storyboard */; };
 		A14D186D201811860025B84E /* TodoList_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14D186C201811860025B84E /* TodoList_AppTests.swift */; };
 		A14D1878201811860025B84E /* TodoList_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14D1877201811860025B84E /* TodoList_AppUITests.swift */; };
+		A14D188720181A260025B84E /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A14D188520181A260025B84E /* ToDoList.xcdatamodeld */; };
+		A14D188920181F510025B84E /* addItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14D188820181F510025B84E /* addItemViewController.swift */; };
+		A14D188D201840B00025B84E /* mainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14D188C201840B00025B84E /* mainTableViewController.swift */; };
+		A1AED03E2019130400EE16DA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AED03D2019130400EE16DA /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		A14D1854201811860025B84E /* TodoList App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TodoList App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14D1857201811860025B84E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A14D1859201811860025B84E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A14D185C201811860025B84E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A14D185E201811860025B84E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A14D1861201811860025B84E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		A14D1873201811860025B84E /* TodoList AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TodoList AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14D1877201811860025B84E /* TodoList_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList_AppUITests.swift; sourceTree = "<group>"; };
 		A14D1879201811860025B84E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14D188620181A260025B84E /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
+		A14D188820181F510025B84E /* addItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addItemViewController.swift; sourceTree = "<group>"; };
+		A14D188C201840B00025B84E /* mainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTableViewController.swift; sourceTree = "<group>"; };
+		A1AED03D2019130400EE16DA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				A14D1857201811860025B84E /* AppDelegate.swift */,
-				A14D1859201811860025B84E /* ViewController.swift */,
+				A14D188C201840B00025B84E /* mainTableViewController.swift */,
 				A14D185B201811860025B84E /* Main.storyboard */,
+				A1AED03D2019130400EE16DA /* CustomCell.swift */,
+				A14D188820181F510025B84E /* addItemViewController.swift */,
+				A14D188520181A260025B84E /* ToDoList.xcdatamodeld */,
 				A14D185E201811860025B84E /* Assets.xcassets */,
 				A14D1860201811860025B84E /* LaunchScreen.storyboard */,
 				A14D1863201811860025B84E /* Info.plist */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A14D185A201811860025B84E /* ViewController.swift in Sources */,
+				A14D188D201840B00025B84E /* mainTableViewController.swift in Sources */,
+				A14D188920181F510025B84E /* addItemViewController.swift in Sources */,
+				A1AED03E2019130400EE16DA /* CustomCell.swift in Sources */,
+				A14D188720181A260025B84E /* ToDoList.xcdatamodeld in Sources */,
 				A14D1858201811860025B84E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,6 +564,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A14D188520181A260025B84E /* ToDoList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A14D188620181A260025B84E /* ToDoList.xcdatamodel */,
+			);
+			currentVersion = A14D188620181A260025B84E /* ToDoList.xcdatamodel */;
+			path = ToDoList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A14D184C201811850025B84E /* Project object */;
 }
